@@ -1,0 +1,26 @@
+.game-container{
+  list-style: none;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; */
+  /* box-shadow: 0 0 5px; */
+  /* padding: 0 0 10px 0; */
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.game-container:hover{
+  transform: scale(1.1);
+
+}
+
+.game-layout img{
+  max-width:100%;
+  max-height:100%;
+  
+}
+

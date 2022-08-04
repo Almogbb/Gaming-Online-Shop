@@ -1,0 +1,12 @@
+.all-games-container{
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* height: 80vh; */
+  flex-wrap: wrap;
+}
+
+.all-games-container ul{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
