@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 
 import pic1 from '../images/CoD.jpg';
 import pic2 from '../images/division.jpg';
@@ -27,8 +27,9 @@ function Carousel() {
   // });
 
   return (
-    <section>
-      <title>Carousel Test</title>
+    <Fragment>
+      {/* <section> */}
+      {/* <title>Carousel Test</title> */}
       <div className='slide-container'>
         <div className='prev-arrow' onClick={prevSlide}></div>
         <div className='next-arrow' onClick={nextSlide}></div>
@@ -45,7 +46,8 @@ function Carousel() {
           </div>
         ))}
       </div>
-    </section>
+      {/* </section> */}
+    </Fragment>
   );
 }
 

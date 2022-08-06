@@ -7,10 +7,12 @@ function GameItem(props) {
     <li className='game-container'>
       <Card>
         <div className='game-layout'>
-          <h3 className='centered'>{props.title}</h3>
           <img src={props.image} alt='' />
         </div>
       </Card>
+      {/* <div> */}
+      <h3 className='game-title centered'>{props.title}</h3>
+      {/* </div> */}
     </li>
   );
 }

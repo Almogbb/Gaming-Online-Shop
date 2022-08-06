@@ -1,11 +1,16 @@
 .slide-container{
   position: relative;
-  height: 50%;
-  max-width: 1000px;
+  /* height: 50%; */
+  height: 420px;
+  max-width: 850px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+  background-color: #020202;
+  border-radius: 33px;
+  border: 5px solid rgb(180 78 10);
+  box-shadow: 0 0 0 black;
 }
 
 .slide-container .prev-arrow, .slide-container .next-arrow{
@@ -30,14 +35,14 @@
 .slide-container .prev-arrow{
   position: absolute;
   top: 50%;
-  left: 55px;
+  left: 30px;
   font-size: 2rem;
 }
 
 .slide-container .next-arrow{
   position: absolute;
   top: 50%;
-  right: 55px;
+  right: 30px; 
   font-size: 2rem;
 }
 

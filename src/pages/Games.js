@@ -2,29 +2,34 @@ import { useSelector } from 'react-redux/es/exports';
 
 import GameItem from '../components/GameItem';
 import Pagination from '../components/Pagination';
+import SearchBar from '../components/SearchBar';
 
 import './Games.css';
 
 function Games() {
   const { games } = useSelector((state) => state.games);
+  const { filteredGames } = useSelector((state) => state.games);
   const { currPage } = useSelector((state) => state.pagination);
   const { gamesPerPage } = useSelector((state) => state.pagination);
 
   const offSet = (currPage - 1) * gamesPerPage;
-  const currPageGamesAmount = games?.slice(offSet, offSet + gamesPerPage);
+  const gamesList = filteredGames.length ? filteredGames : games;
+  const currPageGamesAmount = gamesList?.slice(offSet, offSet + gamesPerPage);
 
   function showGames() {
-    console.log(games);
-    console.log('currPage', currPage);
-    console.log('offSet', offSet);
-    console.log('currPageGamesAmount', currPageGamesAmount);
+    // console.log(games);
+    console.log(filteredGames);
+    // console.log('currPage', currPage);
+    // console.log('offSet', offSet);
+    // console.log('currPageGamesAmount', currPageGamesAmount);
   }
 
   return (
     <div>
-      <button onClick={showGames}>show games</button>
+      {/* <button onClick={showGames}>show games</button> */}
       <div className='all-games-container'>
-        <ul>
+        <SearchBar />
+        <ul className='main-layout'>
           {currPageGamesAmount?.map((game) => (
             <GameItem
               key={game.id}

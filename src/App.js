@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Fragment, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
@@ -64,13 +64,15 @@ function App() {
       <MainHeader />
       {location.pathname === '/Games' && <Hero />}
       <main>
-        <section className='main-layout'>
+        {/* <section> */}
+        <Fragment>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/games' element={<Games />} />
             <Route path='/About' element={<About />} />
           </Routes>
-        </section>
+        </Fragment>
+        {/* </section> */}
       </main>
     </div>
   );

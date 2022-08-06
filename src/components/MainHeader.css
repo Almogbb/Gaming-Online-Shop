@@ -1,16 +1,47 @@
 .main-header{
-  background-color: lightsalmon;
-  display: flex;
+  background-color: #090909;
+  /* position: relative; */
+  /* display: flex; */
   height: 8vh;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  padding: 0 20px;
+  color: white;
+}
+
+.header-layout{
+  max-width: 1300px;
+  height: 100%;
+  /* flex: 1; */
+  /* flex-grow: 1; */
+  margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  /* margin: 0 0px; */
+}
+
+.header-layout span{
+  flex: 1;
+}
+
+.header-layout span img{
+  /* position: absolute; */
+  width: 85px;
+  /* top: 0; */
+  /* left: 10px; */
 }
 
 .header-title{
+  z-index: 1;
+  position: relative;
   /* display: flex; */
   /* justify-content: center;
   align-items: center; */
+  cursor: pointer;
+}
+
+.header-title .frenzy{
+  color: rgb(199 67 67);
 }
 
 .nav-container{
@@ -31,17 +62,26 @@
   padding: 10px;
   /* margin: 20px; */
   font-weight: 400;
-  cursor: pointer;
 }
 
 .nav-container li a{
   text-decoration: none;
-  color: #070708;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  /* margin-inline-end: 8px; */
+  padding: 5px;
+}
+
+.nav-container li a:hover{
+  border-radius: 10px;
+  box-shadow: 0 0 19px 5px #c74343;;
 }
 
 .nav-container a:hover,
 .nav-container a:active{
   /* color: #95bcf0; */
   padding-bottom: 0.25rem;
-  border-bottom: 2px solid #070708;
+  /* border-bottom: 2px solid #070708; */
 }

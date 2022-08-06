@@ -1,0 +1,36 @@
+
+.sponsors-container{
+  display: flex;
+    margin: 20px 0;
+    /* max-width: 1300px; */
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 300px;
+    background: #101010;
+}
+
+.sponsors-container :first-child{
+  margin-left: 50px;
+}
+.sponsors-container :last-child{
+  margin-right: 50px;
+}
+
+.sponsor-card{
+  background: white;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+  /* margin-right: 50px; */
+}
+
+/* .spread-line{
+  width: 1px;
+  height: 70px;
+} */
+

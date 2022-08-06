@@ -16,7 +16,17 @@ body {
 
 .main-layout{
   max-width: 1300px;
+  /* max-width: 80vw; */
   margin: auto;
+  height: 92vh;
+  /* overflow-x: hidden; */
+}
+
+.full-layout{
+  position: relative;
+  width: 100vw;
+  left: 0;
+  margin-left: 10px;
 }
 
 .centered {
@@ -33,6 +43,31 @@ body {
   font-size: 3rem;
   font-weight: bold;
   color: white;
+}
+
+.no-list{
+  list-style-type: none;
+  padding: 0;
+}
+
+.thin-hr{
+  width: 1px;
+  height: 70px;
+  /* border-color: $light-text; */
+  border-color: rgb(189, 17, 17);
+  display: block; 
+  /* height: 1px; */
+  border: 0; 
+  border-top: 1px solid rgb(194, 21, 21);
+  margin: 10px 0;
+  padding: 0; 
+  
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .btn {
